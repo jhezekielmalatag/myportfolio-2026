@@ -1,3 +1,5 @@
+/* Style for the entire page */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* GENERAL STYLES */
 body {
     background-color: aliceblue;
     color: black
@@ -55,19 +58,19 @@ body {
 }
 
 .home-content h1 {
-    font-size: 56px;
+    font-size: 69px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700px;
     color: #00abf0
 }
 
 .home-content p {
-    font-size: 16px;
+    font-size: 18px;
     margin: 20px 0 40px;
 }
 
@@ -230,6 +233,78 @@ body {
     }
 }
 
+/* ABOUT IMAGE DESIGN */
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInRight 1s ease forwards;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 340px;
+    height: 430px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: 0.4s ease;
+}
+
+.image-wrapper:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 171, 240, 0.2);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+/* LIGHT BLUE ACCENT */
+
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+    background: rgba(0, 171, 240, 0.15);
+    border-radius: 50%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .about {
+        height: auto;
+        padding: 120px 8%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .image-wrapper {
+        width: 280px;
+        height: 360px;
+    }
+
+}
+
 
 /* SKILLS SECTION */
 
@@ -382,6 +457,85 @@ body {
     color: #264de4;
 }
 
+/* PROJECTS SECTION */
+
+.projects-section {
+    margin-top: 120px;
+}
+
+.projects-section h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+/* PROJECT CONTAINER */
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* PROJECT CARD */
+
+.project-card {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* PROJECT IMAGE */
+
+.project-card img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* PROJECT INFO */
+
+.project-info h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.project-info p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+}
+
 
 /* CONTACT SECTION */
 
@@ -391,14 +545,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 20px;
+    padding: 100px 20px;
 }
 
 
 /* TEXT */
 
 .contact-text {
-    text-align: center;
+
     margin-bottom: 50px;
 }
 
@@ -474,9 +628,13 @@ body {
     header {
         padding: 25px 30px;
     }
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
+.navbar {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
     }
     .nav-links {
         gap: 20px;
