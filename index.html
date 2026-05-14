@@ -61,4 +61,21 @@
     </footer>
 </body>
 
+    <script>
+        let prevScroll = window.pageYOffset;
+        const header = document.querySelector(".header");
+
+        window.onscroll = () => {
+            let currentScroll = window.pageYOffset;
+
+            if (prevScroll > currentScroll) {
+                header.style.top = "0";
+            } else {
+                header.style.top = "-100px";
+            }
+
+            prevScroll = currentScroll;
+        }
+    </script>
+
 </html>
