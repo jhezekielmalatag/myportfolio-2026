@@ -23,9 +23,17 @@
     </header>
 
     <section class="home">
+
+        <div class="floating-shapes">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="home-content">
             <h1>Hi, I'm John Hezekiel Malatag</h1>
-            <h3>Frontend Developer</h3>
+            <h3><span class="typing-text"></span></h3>
             <p>I'm a passionate learner exploring web development and building projects to improve my skills. I enjoy creating clean designs and bringing ideas to life through code.</p>
             <div class="btn-box">
                 <a href="contact.html">Hire me</a>
@@ -59,23 +67,9 @@
             <p>© 2026 Hezekiel. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- ADD YOUR JAVASCRIPT FILE HERE -->
+    <script src="script.js"></script>
 </body>
 
-    <script>
-        let prevScroll = window.pageYOffset;
-        const header = document.querySelector(".header");
-
-        window.onscroll = () => {
-            let currentScroll = window.pageYOffset;
-
-            if (prevScroll > currentScroll) {
-                header.style.top = "0";
-            } else {
-                header.style.top = "-100px";
-            }
-
-            prevScroll = currentScroll;
-        }
-    </script>
-
-</html>
+</html>>
