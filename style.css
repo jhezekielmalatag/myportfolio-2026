@@ -68,9 +68,10 @@ body {
 }
 
 .home-content h1 {
-    font-size: 69px;
+    font-size: 70px;
     font-weight: 700;
     line-height: 1.1;
+    width: 100%;
 }
 
 .home-content h3 {
@@ -80,7 +81,7 @@ body {
 }
 
 .home-content p {
-    font-size: 18px;
+    font-size: 20px;
     margin: 20px 0 40px;
 }
 
@@ -143,7 +144,7 @@ body {
 /* ABOUT SECTION */
 
 .about {
-    height: 120vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -156,16 +157,14 @@ body {
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
+    justify-content: center;
+    gap: 110px
 }
 
 
 /* TEXT */
 
 .about-text {
-    max-width: 500px;
     animation: fadeInLeft 1s ease forwards;
 }
 
@@ -484,6 +483,16 @@ body {
     display: flex;
     flex-direction: column;
     gap: 35px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-card {
+    cursor: pointer;
 }
 
 
@@ -1030,5 +1039,134 @@ MOBILE RESPONSIVE DESIGN
     .wave {
         top: -40px;
         height: 90px;
+    }
+}
+
+
+/* HOME BACKGROUND EFFECT */
+
+.home {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* FLOATING SHAPES */
+
+.floating-shapes span {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background: rgba(0, 171, 240, 0.12);
+    animation: float 15s linear infinite;
+    bottom: -150px;
+}
+
+
+/* DIFFERENT SIZES + POSITIONS */
+
+.floating-shapes span:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 10%;
+    animation-duration: 18s;
+}
+
+.floating-shapes span:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    left: 25%;
+    animation-duration: 22s;
+}
+
+.floating-shapes span:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    animation-duration: 15s;
+}
+
+.floating-shapes span:nth-child(4) {
+    width: 150px;
+    height: 150px;
+    left: 70%;
+    animation-duration: 25s;
+}
+
+.floating-shapes span:nth-child(5) {
+    width: 90px;
+    height: 90px;
+    left: 85%;
+    animation-duration: 20s;
+}
+
+
+/* FLOAT ANIMATION */
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/* HOME CONTENT ABOVE SHAPES */
+
+.home-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* BUTTON GLOW */
+
+.btn-box a {
+    box-shadow: 0 0 15px rgba(0, 171, 240, 0.3);
+    transition: 0.3s ease;
+}
+
+.btn-box a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 171, 240, 0.6);
+}
+
+
+/* TEXT ANIMATION */
+
+.home-content h1,
+.home-content h3,
+.home-content p,
+.btn-box {
+    animation: fadeUp 1s ease forwards;
+}
+
+.home-content h3 {
+    animation-delay: 0.2s;
+}
+
+.home-content p {
+    animation-delay: 0.4s;
+}
+
+.btn-box {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
