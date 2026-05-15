@@ -14,7 +14,7 @@
 
         <nav class="navbar">
             <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
+            <a href="about.html">About</a>
             <a href="skills.html">Skills</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -40,47 +40,34 @@
                 <div class="about-cards">
 
                     <div class="card">
-                        <h3>Frontend</h3>
-                        <p>Creating responsive and modern website designs.</p>
+                        <div class="about-cards">
+
+                            <div class="card">
+                                <h3>Frontend</h3>
+                                <p>Creating responsive and modern website designs.</p>
+                            </div>
+
+                            <div class="card">
+                                <h3>UI/UX</h3>
+                                <p>Designing clean and user-friendly interfaces.</p>
+
+                                <p>
+                                    My goal is to become a professional software engineer and work on projects that help people while continuously learning and growing as a developer.
+                                </p>
+
+                                <a href="assets/John-Hezekiel-Malatag_Resume.pdf" class="about-btn" target="_blank">
+            Download Resume
+        </a>
+                            </div>
+
+                        </div>
+                        </a>
                     </div>
 
                 </div>
 
-                <div class="card">
-                    <h3>UI/UX</h3>
-                    <p>Designing clean and user-friendly interfaces.</p>
-
-                    <p>
-                        My goal is to become a professional software engineer and work on projects that help people while continuously learning and growing as a developer.
-                    </p>
-
-                    <a href="assets/John-Hezekiel-Malatag_Resume.pdf" class="about-btn" target="_blank">
-    Download Resume
-</a>
-                </div>
-
             </div>
 
-        </div>
-
-    <script>
-        let prevScroll = window.pageYOffset;
-        const header = document.querySelector(".header");
-
-        window.onscroll = () => {
-            let currentScroll = window.pageYOffset;
-
-            if (prevScroll > currentScroll) {
-                header.style.top = "0";
-            } else {
-                header.style.top = "-100px";
-            }
-
-            prevScroll = currentScroll;
-        }
-    </script>
-
-
-
-
+            <!-- ADD YOUR JAVASCRIPT FILE HERE -->
+            <script src="script.js"></script>
     </section>
