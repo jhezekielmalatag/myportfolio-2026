@@ -26,16 +26,14 @@ const typingElement = document.querySelector(".typing-text");
 let index = 0;
 
 function typeText() {
+    if (!typingElement) {
+        return;
+    }
+
     if (index < text.length) {
         typingElement.textContent += text.charAt(index);
         index++;
         setTimeout(typeText, 100);
-    } else {
-        setTimeout(() => {
-            typingElement.textContent = "";
-            index = 0;
-            typeText();
-        }, 1500);
     }
 }
 
