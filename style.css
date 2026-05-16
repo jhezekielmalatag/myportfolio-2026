@@ -701,6 +701,32 @@ body {
     text-align: center;
 }
 
+.linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    background: #00abf0;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.linkedin-button:hover {
+    background: #0097d4;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 171, 240, 0.22);
+}
+
+.linkedin-button i {
+    font-size: 1.35rem;
+}
+
 
 /* CONTACT INFO */
 
@@ -714,6 +740,16 @@ body {
     font-size: 0.98rem;
     line-height: 1.7;
     overflow-wrap: anywhere;
+}
+
+.contact-info a {
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 
