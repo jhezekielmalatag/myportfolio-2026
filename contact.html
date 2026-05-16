@@ -14,23 +14,20 @@
 
 <body>
 
-    <!-- NAVBAR -->
     <header class="header">
         <a href="index.html" class="logo">Hezekiel.</a>
 
         <nav class="navbar">
             <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
+            <a href="about.html">About</a>
             <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
 
-    <!-- CONTACT SECTION -->
     <section class="contact-section">
-
         <div class="contact-text">
+            <p class="section-kicker">Let's connect</p>
             <h1>Contact Me</h1>
 
             <p>
@@ -39,60 +36,53 @@
         </div>
 
         <div class="contact-box">
+            <div class="contact-details">
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
 
-            <!-- EMAIL -->
-            <div class="contact-card">
-                <i class="fa-solid fa-envelope"></i>
-
-                <div class="contact-info">
-                    <h3>Email</h3>
-                    <p>jmalatag2025@student.nbscollege.edu.ph</p>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>jmalatag2025@student.nbscollege.edu.ph</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- PHONE -->
-            <div class="contact-card">
-                <i class="fa-solid fa-phone"></i>
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
 
-                <div class="contact-info">
-                    <h3>Phone</h3>
-                    <p>+63 9946445549</p>
+                    <div class="contact-info">
+                        <h3>Phone</h3>
+                        <p>+63 9946445549</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- VIBER -->
-            <div class="contact-card">
-                <i class="fa-brands fa-viber"></i>
+                <div class="contact-card">
+                    <i class="fa-brands fa-viber"></i>
 
-                <div class="contact-info">
-                    <h3>Viber</h3>
-                    <p>John Hezekiel Z. Malatag</p>
-                    <p>+63 09946445549</p>
+                    <div class="contact-info">
+                        <h3>Viber</h3>
+                        <p>John Hezekiel Z. Malatag</p>
+                        <p>+63 09946445549</p>
+                    </div>
                 </div>
             </div>
 
             <form action="https://formspree.io/f/xpqbejdn" method="POST" class="contact-form">
+                <label>
+                    Your email:
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </label>
 
                 <label>
-        Your email:
-        <input type="email" name="email" placeholder="Enter your email">
-    </label>
-
-                <label>
-        Your message:
-        <textarea name="message" placeholder="Write your message here..."></textarea>
-    </label>
+                    Your message:
+                    <textarea name="message" placeholder="Write your message here..." required></textarea>
+                </label>
 
                 <button type="submit">Send Message</button>
-
             </form>
-
         </div>
-
     </section>
 
+    <script src="script.js"></script>
 </body>
-<!--JAVA HERE-->
-<script src="script.js"></script>
 
 </html>
