@@ -3,20 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | John Hezekiel Malatag</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-
     <header class="header">
         <a href="index.html" class="logo">Hezekiel.</a>
 
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
+            <a href="skills.html" class="active">Skills</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
@@ -24,136 +24,112 @@
     <section class="skills" id="skills">
         <div class="skills-content">
             <h1>My Skills</h1>
+
             <div class="skills-container">
-                <!-- PYTHON -->
                 <div class="skill-box">
                     <i class="fa-brands fa-python python"></i>
                     <h2>Python</h2>
                 </div>
-                <!-- HTML -->
+
                 <div class="skill-box">
                     <i class="fa-brands fa-html5 html"></i>
                     <h2>HTML</h2>
                 </div>
-                <!-- CSS -->
+
                 <div class="skill-box">
                     <i class="fa-brands fa-css3-alt css"></i>
                     <h2>CSS</h2>
                 </div>
-                <!--JAVASCRIPT-->
+
                 <div class="skill-box">
                     <i class="fa-brands fa-js javascript"></i>
                     <h2>JavaScript</h2>
                 </div>
-                <!-- PROJECTS SECTION -->
-                <div class="projects-section">
-                    <h1>My Projects</h1>
+            </div>
 
-                    <div class="projects-container">
+            <div class="projects-section">
+                <h1>My Projects</h1>
 
-                        <!-- PROJECT 1 -->
-                        <a href="https://github.com/YOUR_USERNAME/age-calculator" target="_blank" class="project-link">
+                <div class="projects-container">
+                    <a href="https://github.com/jhezekielmalatag/projects-porfolio/blob/main/age.py" target="_blank" rel="noopener" class="project-link">
+                        <div class="project-card">
+                            <img src="assets/age_project.jpg" alt="Age Calculator">
 
-                            <div class="project-card">
-                                <img src="assets/age_project.jpg" alt="Age Calculator">
-
-                                <div class="project-info">
-                                    <h2>Age Calculator</h2>
-                                    <p>
-                                        A Python program that calculates and displays a user's age.
-                                    </p>
-                                </div>
+                            <div class="project-info">
+                                <h2>Age Calculator</h2>
+                                <p>A Python program that calculates and displays a user's age.</p>
                             </div>
+                        </div>
+                    </a>
 
-                        </a>
+                    <a href="https://github.com/jhezekielmalatag/projects-porfolio/blob/main/cart.py" target="_blank" rel="noopener" class="project-link">
+                        <div class="project-card">
+                            <img src="assets/cart_project.jpg" alt="Shopping Cart System">
 
-                        <!-- PROJECT 2 -->
-
-                        <a href="https://github.com/YOUR_USERNAME/shopping-cart" target="_blank" class="project-link">
-
-                            <div class="project-card">
-                                <img src="assets/cart_project.jpg" alt="Shopping Cart System">
-
-                                <div class="project-info">
-                                    <h2>Shopping Cart System</h2>
-                                    <p>
-                                        A basic cart application built in Python that handles item input, quantity management, and total price calculations.
-                                    </p>
-                                </div>
+                            <div class="project-info">
+                                <h2>Shopping Cart System</h2>
+                                <p>A basic cart application built in Python that handles item input, quantity management, and total price calculations.</p>
                             </div>
+                        </div>
+                    </a>
 
-                            <!-- PROJECT 3 -->
-                            <a href="https://github.com/YOUR_USERNAME/shopping-cart" target="_blank" class="project-link">
+                    <a href="https://github.com/jhezekielmalatag/projects-porfolio/blob/main/collatz.py" target="_blank" rel="noopener" class="project-link">
+                        <div class="project-card">
+                            <img src="assets/collatz_project.jpg" alt="Collatz Sequence">
 
-                                <div class="project-card">
-                                    <img src="assets/collatz_project.jpg" alt="Collatz Sequence">
+                            <div class="project-info">
+                                <h2>Collatz Sequence Program</h2>
+                                <p>A Python implementation of the Collatz Conjecture demonstrating loops, conditions, and mathematical operations.</p>
+                            </div>
+                        </div>
+                    </a>
 
-                                    <div class="project-info">
-                                        <h2>Collatz Sequence Program</h2>
-                                        <p>
-                                            A Python implementation of the Collatz Conjecture demonstrating loops, conditions, and mathematical operations.
-                                        </p>
-                                    </div>
-                                </div>
+                    <a href="https://github.com/jhezekielmalatag/projects-porfolio/blob/main/list_of_friends.py" target="_blank" rel="noopener" class="project-link">
+                        <div class="project-card">
+                            <img src="assets/friends_project.jpg" alt="Friends List Manager">
 
-                                <!-- PROJECT 4 -->
-                                <a href="https://github.com/YOUR_USERNAME/shopping-cart" target="_blank" class="project-link">
+                            <div class="project-info">
+                                <h2>Friends List Manager</h2>
+                                <p>A Python project that stores and manages lists of friends using arrays and interactive user input.</p>
+                            </div>
+                        </div>
+                    </a>
 
-                                    <div class="project-card">
-                                        <img src="assets/friends_project.jpg" alt="Friends List Manager">
+                    <a href="https://github.com/jhezekielmalatag/projects-porfolio/blob/main/secretnumber.py" target="_blank" rel="noopener" class="project-link">
+                        <div class="project-card">
+                            <img src="assets/secretnum_project.jpg" alt="Secret Number Game">
 
-                                        <div class="project-info">
-                                            <h2>Friends List Manager</h2>
-                                            <p>
-                                                A Python project that stores and manages lists of friends using arrays and interactive user input.
-                                            </p>
-                                        </div>
-                                    </div>
+                            <div class="project-info">
+                                <h2>Secret Number Game</h2>
+                                <p>An interactive guessing game created in Python where users attempt to guess the correct hidden number.</p>
+                            </div>
+                        </div>
+                    </a>
 
-                                    <!-- PROJECT 5 -->
-                                    <a href="https://github.com/YOUR_USERNAME/shopping-cart" target="_blank" class="project-link">
+                    <a href="https://github.com/jhezekielmalatag/projects-porfolio/blob/main/sentence.py" target="_blank" rel="noopener" class="project-link">
+                        <div class="project-card">
+                            <img src="assets/sentence_project.jpg" alt="Sentence Analyzer">
 
-                                        <div class="project-card">
-                                            <img src="assets/secretnum_project.jpg" alt="Secret Number Game">
+                            <div class="project-info">
+                                <h2>Sentence Analyzer</h2>
+                                <p>A Python-based text analyzer that processes sentences and demonstrates string manipulation techniques.</p>
+                            </div>
+                        </div>
+                    </a>
 
-                                            <div class="project-info">
-                                                <h2>Secret Number Game</h2>
-                                                <p>
-                                                    An interactive guessing game created in Python where users attempt to guess the correct hidden number.
-                                                </p>
-                                            </div>
-                                        </div>
+                    <a href="https://github.com/jhezekielmalatag/projects-porfolio/blob/main/scenario.py" target="_blank" rel="noopener" class="project-link">
+                        <div class="project-card">
+                            <img src="assets/scenario_project.jpg" alt="Scenario Simulation">
 
-                                        <!-- PROJECT 6 -->
-                                        <a href="https://github.com/YOUR_USERNAME/shopping-cart" target="_blank" class="project-link">
-
-                                            <div class="project-card">
-                                                <img src="assets/sentence_project.jpg" alt="Sentence Analyzer">
-
-                                                <div class="project-info">
-                                                    <h2>Sentence Analyzer</h2>
-                                                    <p>
-                                                        A Python-based text analyzer that processes sentences and demonstrates string manipulation techniques.
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <!-- PROJECT 7 -->
-                                            <a href="https://github.com/YOUR_USERNAME/shopping-cart" target="_blank" class="project-link">
-
-                                                <div class="project-card">
-                                                    <img src="assets/scenario_project.jpg" alt="Scenario Simulation">
-
-                                                    <div class="project-info">
-                                                        <h2>Scenario Simulation</h2>
-                                                        <p>
-                                                            A decision-based Python program that simulates different scenarios using conditional statements and logical flow.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                    </div>
+                            <div class="project-info">
+                                <h2>Scenario Simulation</h2>
+                                <p>A decision-based Python program that simulates different scenarios using conditional statements and logical flow.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
+        </div>
     </section>
 
     <script src="script.js"></script>
